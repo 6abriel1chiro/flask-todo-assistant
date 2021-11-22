@@ -38,12 +38,12 @@ def listen_command():
     return command
 
 def greeting():
-    talk('please tell me your name')
+    talk('hello, please tell me your name')
     command = listen_command()
     if 'my name is' in command:
          name = command
          mydict = { "name": name, "role":"user" }
-         x = mycol.insert_one(mydict)
+         x = colUsr.insert_one(mydict)
 
     talk('hi ' + name + ' nice to meet you, my name is EVA')
 
@@ -65,7 +65,9 @@ def WikipediaSummary(command):
 
 
 def runEVA():
-    command = listen_command()z
+    command = listen_command()
+    if 'hello' in command:
+        greeting()
     if 'play' in command:
         ListeningToMusic(command)
     elif 'time' in command:
