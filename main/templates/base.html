@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flask Auth Example</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="  {{ url_for('static', filename='styles/style.css') }}" />
 </head>
 
 <body>
-    <section class="hero is-primary is-fullheight">
-        <div class="hero-body">
-            <div class="container has-text-centered">
+    <section class="main-section">
+        <div class="main-body">
+            <div class="container-centered">
                {% block content %}
-               
+
                {% endblock %}
             </div>
         </div>
