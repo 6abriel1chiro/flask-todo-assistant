@@ -65,7 +65,7 @@ def WikipediaSummary(command):
 
 
 def runEVA():
-    command = listen_command()
+    command = listen_command()z
     if 'play' in command:
         ListeningToMusic(command)
     elif 'time' in command:
