@@ -16,9 +16,7 @@ listener = sr.Recognizer()
 engine = pyttsx3.init()
 voices=engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["python_EVA_DB"]
-colUsr = mydb["users"]
+
 def talk(text):
     engine.say(text)
     engine.runAndWait()
@@ -57,11 +55,18 @@ def WikipediaSummary(command):
     print(info)
     talk('found: ' + info)
 
+def open_notes():
+    talk('these are your notes ')
+
+
+
 
 def runEVA():
     command = listen_command()
     if 'hello' in command:
         greeting()
+    elif 'notes' in command:
+        open_notes()
     elif 'play' in command:
         ListeningToMusic(command)
     elif 'time' in command:

@@ -31,3 +31,8 @@ def home():
 @login_required
 def dashboard():
   return render_template('dashboard.html')
+
+  @app.route('/assistant/')
+  @login_required
+  def assistantUI():
+    return render_template('assistantUI.html')

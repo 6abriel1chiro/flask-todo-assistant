@@ -33,11 +33,11 @@ class User:
       return self.start_session(user)
 
     return jsonify({ "error": "Signup failed" }), 400
-  
+
   def signout(self):
     session.clear()
     return redirect('/')
-  
+
   def login(self):
 
     user = db.users.find_one({
