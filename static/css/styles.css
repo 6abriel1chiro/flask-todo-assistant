@@ -33,6 +33,14 @@ body {
   background: var(--grey-light);
 }
 
+#speechTranscriptContainer {
+    margin-top: 20px;
+}
+
+#speechText {
+    font-size: 18px;
+    width: 500px;
+}
 /* Typography */
 .center {
   text-align: center;
@@ -52,6 +60,13 @@ h2 {
   color: var(--grey-dark);
 }
 
+
+h2.showspeech {
+  margin: 0.5em 0 1em;
+  font-size: 20px;
+  line-height: 1.2;
+  color: white;
+}
 p {
   margin: 24px 0;
 }
@@ -68,7 +83,7 @@ p {
 .card {
   margin: 0 30px 60px;
   padding: 20px 40px;
-  width: 460px;
+  width: 500;
   box-shadow: 0 8px 26px -4px rgba(0,0,0,0.15);
   border-radius: 5px;
   background: var(--white);
@@ -172,7 +187,62 @@ label {
   background: var(--secondary-dark);
 }
 
+
+
 input[type=submit] {
   margin: 34px auto 24px;
   display: block;
+}
+
+
+table#close{
+
+	table-layout:default;
+	border-collapse:seperate;
+	border-spacing: 5px 5px;
+	border:none;
+	vertical-align:top;
+}
+table.none
+{
+	border:none;
+	vertical-align:top;
+}
+
+table.none td
+{
+	border: none;
+}
+tr.row td{
+  margin: 0 0 24px;
+  padding: 11px 30px 10px;
+}
+th.status{
+	width:10%;
+}
+th.name{
+  width:100%;
+}
+th.des{
+  width:100%;
+	padding:5px 5px 5px 5px;
+}
+th.date{
+	width:100%;
+}
+
+table.table-todo th{
+  vertical-align:top;
+  border: 1px dotted black;
+
+
+}
+th.pr{
+	width:7%;
+}
+th.func1{
+	width:6%;
+}
+th.func2{
+	width:5%;
 }

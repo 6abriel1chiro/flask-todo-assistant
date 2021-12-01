@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "header.html" %}
+
+    <div id="loader">
+        <div class="row " style="position:relative;">
+            <div class="column1">
+                <h2>Record Audio</h2>
+                    <p>
+                        <button id="start" class="btn btn-success" onclick="startRecording()" disabled>Start</button>
+                        <button id="stop" class="btn btn-danger" onclick="stopRecording()" disabled>Stop</button>
+                    </p>
+            </div>
+            <div class="column2" >
+                <h2 class="showspeech">Audio Prediction</h2>
+                <p class="glow" id="output" style="font-size: 20px;"></p>
+
+
+            </div>
+        </div>
+    </div>
+    {% endblock %}
