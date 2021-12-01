@@ -10,11 +10,11 @@
 
     <div class="card">
   	{% if todos[0] %}
-  	<b><big>To-Do LIST :</big></b>
+  	<b><big>NOTE LIST :</big></b>
   	<table class="table-todo">
   	    <tr id="row">
   	    	<th class="status">Status</th>
-  	    	<th class="name">Task Name</th>
+  	    	<th class="name"> Name</th>
   	    	<th class="desc">Description</th>
   	    	<th class="date">Date</th>
   	    	<th class="pr">Priority</th>
@@ -40,14 +40,14 @@
   	<form action="/action" method="POST">
   	<table>
   		<tr>
-  			<td><b><big><label>Add a Task : </label></big></b></td>
+  			<td><b><big><label>AÑADIR NOTA : </label></big></b></td>
   		</tr>
   		<tr>
-  		<td><input type="text" name="name" placeholder="Taskname" /></td>
+  		<td><input type="text" name="name" placeholder="title" /></td>
     </tr>
   <tr>
 
-  		<td><textarea name="desc" rows="1" cols="30" placeholder="Enter Description here..." required></textarea></td>
+  		<td><textarea name="desc" rows="1" cols="30" placeholder=" Descripcion ..." required></textarea></td>
     </tr>
     <tr>
 
@@ -55,7 +55,7 @@
     </tr>
     <tr>
 
-  		<td><input type="text" name="pr" placeholder="Priority" /></td>
+  		<td><input type="text" name="pr" placeholder="importancia" /></td>
     </tr>
   <tr>
 
