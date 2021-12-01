@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Login System</title>
-
   <link rel="stylesheet" href="/static/css/normalize.css">
   <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/header_file.css">
+<link rel="stylesheet" type="text/css" href="/static/css/footer_file.css">
+<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+<link rel="stylesheet" type="text/css" href="/static/css/audio_to_text.css">
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+  {% block title %}
+    {# title inserted here #}
+  {% endblock %}
+
 
 </head>
 <body>
@@ -15,9 +23,12 @@
   {% block content %}
     {# Template inserted here #}
   {% endblock %}
-  
+  <script src="/static/js/recorder.js"></script>
+  <script src="/static/js/audiodisplay.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/recorderWorker.js"></script>
   <script src="/static/js/jquery.js"></script>
   <script src="/static/js/scripts.js"></script>
-  
+
 </body>
 </html>

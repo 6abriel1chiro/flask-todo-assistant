@@ -1,6 +1,10 @@
 {% extends "base.html" %}
-
+{% block head %}
+  <title>dashboard</title>
+{% endblock %}
 {% block content %}
+{% include "header.html" %}
+
   <div class="card-wrapper">
 
     <div class="card">
@@ -11,7 +15,7 @@
       <div class="center">
         <a href="/user/signout" class="btn btn--secondary">Sign Out</a>
       </div>
-    
+
     </div>
 
     <div class="card">
@@ -23,8 +27,8 @@
         <strong>Name:</strong> {{ session['user']['name'] }}<br>
         <strong>Email:</strong> {{ session['user']['email'] }}
       </p>
-    
+
     </div>
-  
+
   </div>
 {% endblock %}
